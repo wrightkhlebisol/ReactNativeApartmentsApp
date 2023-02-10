@@ -3,19 +3,13 @@ import {
 } from "react-native";
 
 export const Screen = (
-    {
-        children,
-        style
-    }: {
-        children: any,
-        style?: ViewStyle
-    }
+    { children, style }: { children: any, style?: ViewStyle }
 ) => {
-    return <SafeAreaView
-        style={[styles.container, style]}
-    >
-        {children}
-    </SafeAreaView>
+    return (
+        <SafeAreaView style={[styles.container, style]}>
+            {children}
+        </SafeAreaView>
+    )
 }
 
 const styles = StyleSheet.create({
