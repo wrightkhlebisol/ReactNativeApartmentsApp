@@ -10,7 +10,7 @@ import * as React from 'react';
 import { ColorSchemeName, Pressable } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-import { default as theme } from '../theme.json';
+import { theme } from '../theme';
 import {AccountScreen} from '../screens/AccountScreen';
 import {SavedScreen} from '../screens/SavedScreen';
 import {SearchScreen} from '../screens/SearchScreen';
@@ -54,7 +54,7 @@ function BottomTabNavigator() {
     <BottomTab.Navigator
       initialRouteName="Search"
       screenOptions={{
-        tabBarActiveTintColor: theme['color-primary-500'],
+        tabBarActiveTintColor: theme['color-primary-400'],
       }}>
       <BottomTab.Screen
         name="Search"
